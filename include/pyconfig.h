@@ -336,7 +336,7 @@
 /* #define HAVE_FLOCK 1 */
 
 /* Define to 1 if you have the `fork' function. */
-/* #define HAVE_FORK 1 */
+#define HAVE_FORK 1
 
 /* Define to 1 if you have the `forkpty' function. */
 /* #define HAVE_FORKPTY 1 */
@@ -451,7 +451,7 @@
 #define HAVE_GETPGID 1
 
 /* Define to 1 if you have the `getpgrp' function. */
-/* #define HAVE_GETPGRP 1 */
+#define HAVE_GETPGRP 1
 
 /* Define to 1 if you have the `getpid' function. */
 #define HAVE_GETPID 1
@@ -746,10 +746,10 @@
 /* #undef HAVE_PTHREAD_INIT */
 
 /* Define to 1 if you have the `pthread_kill' function. */
-/* #define HAVE_PTHREAD_KILL 1 TODO */
+//TODO #define HAVE_PTHREAD_KILL 1
 
 /* Define to 1 if you have the `pthread_sigmask' function. */
-/* #define HAVE_PTHREAD_SIGMASK 1 */
+#define HAVE_PTHREAD_SIGMASK 1
 
 /* Define to 1 if you have the <pty.h> header file. */
 #define HAVE_PTY_H 1
@@ -896,7 +896,7 @@
 #define HAVE_SHADOW_H 1
 
 /* Define to 1 if you have the `sigaction' function. */
-//#define HAVE_SIGACTION 1
+#define HAVE_SIGACTION 1
 
 /* Define to 1 if you have the `sigaltstack' function. */
 //#define HAVE_SIGALTSTACK 1
@@ -911,7 +911,7 @@
 #define HAVE_SIGNAL_H 1
 
 /* Define to 1 if you have the `sigpending' function. */
-/* #define HAVE_SIGPENDING 1 */ // TODO
+#define HAVE_SIGPENDING 1
 
 /* Define to 1 if you have the `sigrelse' function. */
 /* #define HAVE_SIGRELSE 1 */ //TODO
@@ -920,7 +920,7 @@
 /* #define HAVE_SIGTIMEDWAIT 1 */// todo
 
 /* Define to 1 if you have the `sigwait' function. */
-//#define HAVE_SIGWAIT 1
+#define HAVE_SIGWAIT 1
 
 /* Define to 1 if you have the `sigwaitinfo' function. */
 //#define HAVE_SIGWAITINFO 1
@@ -966,7 +966,7 @@
 #define HAVE_STDLIB_H 1
 
 /* Has stdatomic.h with atomic_int */
-//#define HAVE_STD_ATOMIC 1
+#define HAVE_STD_ATOMIC 1
 
 /* Define to 1 if you have the `strdup' function. */
 #define HAVE_STRDUP 1

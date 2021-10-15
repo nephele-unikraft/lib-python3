@@ -32,6 +32,9 @@
  * THIS HEADER MAY NOT BE EXTRACTED OR MODIFIED IN ANY WAY.
  */
 
+#include <pyconfig.h>
+
+#ifndef HAVE_FORK
 void PyOS_BeforeFork(void)
 {
 }
@@ -43,3 +46,4 @@ void PyOS_AfterFork_Parent(void)
 void PyOS_AfterFork_Child(void)
 {
 }
+#endif

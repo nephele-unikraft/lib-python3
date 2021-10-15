@@ -43,4 +43,5 @@ void __constructor python_init(void)
 	setenv("PYTHONUSERBASE", "site-packages", 0);
 	setenv("TMPDIR", CONFIG_LIBPYTHON3_TMPDIR, 0);
 	setenv("_PYTHON_SYSCONFIGDATA_NAME", "_sysconfigdata", 0);
+	setenv("PROCESSOR_IDENTIFIER", "x86_64", 0);
 }
