@@ -662,7 +662,9 @@
 #define HAVE_MKTIME 1
 
 /* Define to 1 if you have the `mmap' function. */
-/* #define HAVE_MMAP 1 */
+#ifdef CONFIG_LIBPOSIX_MMAP
+#define HAVE_MMAP 1
+#endif
 
 /* Define to 1 if you have the `mremap' function. */
 /* #define HAVE_MREMAP 1 */
