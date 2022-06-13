@@ -472,7 +472,7 @@ UK_PREPARE += $(LIBPYTHON3_BUILD)/.prepared
 ################################################################################
 
 # Build root filesystem for Python interpreter
-PYTHON_ROOTFS = $(APP_BASE)/$(path)
+PYTHON_ROOTFS = $(path)
 
 # Create virtual environment
 $(PYTHON_ROOTFS)/.keep: $(LIBPYTHON3_BUILD)/.origin
@@ -481,7 +481,7 @@ $(PYTHON_ROOTFS)/.keep: $(LIBPYTHON3_BUILD)/.origin
 # Configure origin
 $(PYTHON_ROOTFS)/.configured: $(PYTHON_ROOTFS)/.keep
 	mkdir -p $(PYTHON_ROOTFS) &>/dev/null
-	cd $(LIBPYTHON3_SRC) && ./configure --prefix=$(shell realpath $(APP_BASE)/$(path)) && touch $@
+	cd $(LIBPYTHON3_SRC) && ./configure --prefix=$(shell realpath $(PYTHON_ROOTFS)) && touch $@
 
 # Install Python standard library into virtual environment
 $(PYTHON_ROOTFS)/.done: $(PYTHON_ROOTFS)/.configured
