@@ -1502,7 +1502,7 @@
 #define _FILE_OFFSET_BITS 64
 
 /* Define on Linux to activate all library features */
-#define _GNU_SOURCE 1
+//#define _GNU_SOURCE 1
 
 /* Define to include mbstate_t for mbrtowc */
 /* #undef _INCLUDE__STDC_A1_SOURCE */
